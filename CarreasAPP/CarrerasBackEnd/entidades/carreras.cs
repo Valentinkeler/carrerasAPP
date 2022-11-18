@@ -15,11 +15,11 @@ namespace CarrerasBackEnd.entidades
         {
             detallesCarreras = new List<detalleCarreras>();
         }
-        public  void agregarCarrera(detalleCarreras oDetalle)
+        public  void agregardetalle(detalleCarreras oDetalle)
         {
             detallesCarreras.Add(oDetalle);
         }
-        public void quitarCarrera(int id)
+        public void quitardetalle(int id)
         {
             detallesCarreras.RemoveAt(id);
         }

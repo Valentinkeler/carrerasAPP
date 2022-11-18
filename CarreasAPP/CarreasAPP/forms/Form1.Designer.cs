@@ -39,12 +39,17 @@
             this.rbtPrimerCuatri = new System.Windows.Forms.RadioButton();
             this.rbtSegundoCuatri = new System.Windows.Forms.RadioButton();
             this.btnAgregarMateria = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvMaterias = new System.Windows.Forms.DataGridView();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.IdMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.materia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.añoCursado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cuatrimestre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quitar = new System.Windows.Forms.DataGridViewButtonColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterias)).BeginInit();
             this.SuspendLayout();
             // 
             // txtCarrera
@@ -145,14 +150,20 @@
             this.btnAgregarMateria.UseVisualStyleBackColor = true;
             this.btnAgregarMateria.Click += new System.EventHandler(this.btnAgregarMateria_Click);
             // 
-            // dataGridView1
+            // dgvMaterias
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(37, 191);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(658, 196);
-            this.dataGridView1.TabIndex = 11;
+            this.dgvMaterias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMaterias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IdMateria,
+            this.materia,
+            this.añoCursado,
+            this.cuatrimestre,
+            this.quitar});
+            this.dgvMaterias.Location = new System.Drawing.Point(123, 180);
+            this.dgvMaterias.Name = "dgvMaterias";
+            this.dgvMaterias.RowTemplate.Height = 25;
+            this.dgvMaterias.Size = new System.Drawing.Size(447, 196);
+            this.dgvMaterias.TabIndex = 11;
             // 
             // btnNuevo
             // 
@@ -193,6 +204,32 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // IdMateria
+            // 
+            this.IdMateria.HeaderText = "idMateria";
+            this.IdMateria.Name = "IdMateria";
+            this.IdMateria.Visible = false;
+            // 
+            // materia
+            // 
+            this.materia.HeaderText = "materia";
+            this.materia.Name = "materia";
+            // 
+            // añoCursado
+            // 
+            this.añoCursado.HeaderText = "añoCursado";
+            this.añoCursado.Name = "añoCursado";
+            // 
+            // cuatrimestre
+            // 
+            this.cuatrimestre.HeaderText = "cuatrimestre";
+            this.cuatrimestre.Name = "cuatrimestre";
+            // 
+            // quitar
+            // 
+            this.quitar.HeaderText = "quitar";
+            this.quitar.Name = "quitar";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -202,7 +239,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvMaterias);
             this.Controls.Add(this.btnAgregarMateria);
             this.Controls.Add(this.rbtSegundoCuatri);
             this.Controls.Add(this.rbtPrimerCuatri);
@@ -217,7 +254,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaterias)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -236,10 +273,15 @@
         private RadioButton rbtPrimerCuatri;
         private RadioButton rbtSegundoCuatri;
         private Button btnAgregarMateria;
-        private DataGridView dataGridView1;
+        private DataGridView dgvMaterias;
         private Button btnNuevo;
         private Button button1;
         private Button button2;
         private Button button3;
+        private DataGridViewTextBoxColumn IdMateria;
+        private DataGridViewTextBoxColumn materia;
+        private DataGridViewTextBoxColumn añoCursado;
+        private DataGridViewTextBoxColumn cuatrimestre;
+        private DataGridViewButtonColumn quitar;
     }
 }
