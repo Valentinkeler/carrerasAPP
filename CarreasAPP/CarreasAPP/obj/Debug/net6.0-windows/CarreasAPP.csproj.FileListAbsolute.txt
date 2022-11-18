@@ -1,0 +1,17 @@
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\bin\Debug\net6.0-windows\CarreasAPP.exe
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\bin\Debug\net6.0-windows\CarreasAPP.deps.json
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\bin\Debug\net6.0-windows\CarreasAPP.runtimeconfig.json
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\bin\Debug\net6.0-windows\CarreasAPP.dll
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\bin\Debug\net6.0-windows\CarreasAPP.pdb
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.csproj.AssemblyReference.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.Form1.resources
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.csproj.GenerateResource.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.AssemblyInfoInputs.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.AssemblyInfo.cs
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.csproj.CoreCompileInputs.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.dll
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\refint\CarreasAPP.dll
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.pdb
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\CarreasAPP.genruntimeconfig.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarreasAPP\obj\Debug\net6.0-windows\ref\CarreasAPP.dll

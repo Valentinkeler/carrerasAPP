@@ -9,7 +9,19 @@ namespace CarrerasBackEnd.entidades
     public class carreras
     {
         public string nombre { get; set; }
-        public int titulo { get; set; }
+        public titulo titulos { get; set; }
         public List<detalleCarreras> detallesCarreras { get; set; }
+        public carreras()
+        {
+            detallesCarreras = new List<detalleCarreras>();
+        }
+        public  void agregarCarrera(detalleCarreras oDetalle)
+        {
+            detallesCarreras.Add(oDetalle);
+        }
+        public void quitarCarrera(int id)
+        {
+            detallesCarreras.RemoveAt(id);
+        }
     }
 }
