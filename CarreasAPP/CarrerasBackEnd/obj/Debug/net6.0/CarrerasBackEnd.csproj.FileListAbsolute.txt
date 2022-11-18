@@ -1,0 +1,12 @@
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\bin\Debug\net6.0\CarrerasBackEnd.deps.json
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\bin\Debug\net6.0\CarrerasBackEnd.dll
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\bin\Debug\net6.0\CarrerasBackEnd.pdb
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.csproj.AssemblyReference.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.AssemblyInfoInputs.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.AssemblyInfo.cs
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.csproj.CoreCompileInputs.cache
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.dll
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\refint\CarrerasBackEnd.dll
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\CarrerasBackEnd.pdb
+C:\Users\valentin\Desktop\carreras\carrerasAPP\CarreasAPP\CarrerasBackEnd\obj\Debug\net6.0\ref\CarrerasBackEnd.dll

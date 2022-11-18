@@ -1,4 +1,4 @@
-create	database	DB_Carreras
+create	database	DB_Carreras1
 
 create	table	titulo(
 id_titulo	int	identity(1,1),
@@ -24,11 +24,13 @@ create	table	detalle_carrera(
 id_detalle_carrera	int	identity(1,1),
 año_cursado	varchar(50),
 cuatrimestre	bit,
-id_carrera	int
+id_carrera	int,
+id_materias	int
 constraint	id_Detalle_Carrera	primary	key(id_detalle_carrera),
 constraint	id_Carrera	foreign	key(id_carrera)
-references	carrera(id_carrera))
-
+references	carrera(id_carrera),
+constraint	id_Materias	foreign	key(id_materias)
+references	materias(id_materias))
 
 
 insert	into	titulo(descripcion)
@@ -52,4 +54,59 @@ insert	into	materias(descricion)
 values('legislacion')
 insert	into	materias(descricion)
 values('metodologia	de	la	investigacion')
+
+create	procedure	SP_Consultar_Materias
+as
+	begin
+		select	*	from	materias
+	end
+
+create	procedure	SP_Consultar_titulos
+as
+	begin
+		select	*	from	titulo
+	end
+
+
+create	procedure	SP_Crear_Carrera
+@nombre_carrera	varchar(50),
+@id_titulo	int,
+@id_carrera	int	output
+as
+	begin
+		insert	into	carrera(nombre_carrera,id_titulo)
+		values(@nombre_carrera,@id_titulo)
+		SET @id_carrera = SCOPE_IDENTITY();
+	end
+
+
+create	procedure	SP_Crear_Detalle
+@año_cursado	varchar(50),
+@cuatrimestre	bit,
+@id_carrera	int,
+@id_materias	int
+as
+	begin
+		insert	into	detalle_carrera(año_cursado,cuatrimestre,id_carrera,id_materias)
+		values(@año_cursado,@cuatrimestre,@id_carrera,@id_materias)
+	end
+
+
+
+insert	into	carrera(nombre_carrera,id_titulo)
+	values('programacion',1)
+
+
+insert	into	detalle_carrera(año_cursado,cuatrimestre,id_carrera,id_materias)
+		values('primerAño',0,1,4)
+		
+insert	into	detalle_carrera(año_cursado,cuatrimestre,id_carrera,id_materias)
+		values('primerAño',0,1,1)
+		
+insert	into	detalle_carrera(año_cursado,cuatrimestre,id_carrera,id_materias)
+		values('primerAño',0,1,5)
+
+select	*from	detalle_carrera
+
+
 

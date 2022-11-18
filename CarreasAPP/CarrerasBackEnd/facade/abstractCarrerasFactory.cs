@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CarrerasBackEnd.facade
 {
-    internal class abstractCarrerasFactory
+    public abstract class abstractCarrerasFactory
     {
+        public abstract Idatos getInstance();
+
     }
 }

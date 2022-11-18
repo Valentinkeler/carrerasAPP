@@ -11,7 +11,7 @@ namespace CarrerasBackEnd.datos
     {
         List<materias> getMaterias();
 
-        List<titulo> getTitulos(int id);
+        List<titulo> getTitulos();
 
         bool crearCarrera(carreras oCarrera);
 

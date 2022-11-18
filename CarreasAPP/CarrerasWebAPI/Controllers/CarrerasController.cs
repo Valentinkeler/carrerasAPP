@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CarrerasBackEnd.entidades;
+using CarrerasBackEnd.facade;
+using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -8,36 +10,68 @@ namespace CarrerasWebAPI.Controllers
     [ApiController]
     public class CarrerasController : ControllerBase
     {
-        // GET: api/<CarrerasController>
-        [HttpGet]
-        public IEnumerable<string> Get()
+        private Idatos _datos;
+        public CarrerasController()
         {
-            return new string[] { "value1", "value2" };
+            //_datos = factory.getInstance();
+            _datos = new datosCarreras();
+        }
+        [HttpGet("/materias")]
+        public IActionResult getMaterias()
+        {
+            if (_datos.GetMaterias!=null)
+            {
+                return Ok(_datos.GetMaterias());
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
-        // GET api/<CarrerasController>/5
-        [HttpGet("{id}")]
-        public string Get(int id)
+        [HttpGet("/titulo")]
+        public IActionResult GetTitulos()
         {
-            return "value";
+            if (_datos.GetTitulos != null)
+            {
+                return Ok(_datos.GetTitulos());
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
-        // POST api/<CarrerasController>
-        [HttpPost]
-        public void Post([FromBody] string value)
+        
+        [HttpPost("/carrera")]
+        public IActionResult PostCarrera(carreras Ocarrera)
         {
+            try
+            {
+                if (Ocarrera==null)
+                {
+                    return BadRequest("datosDeCarreraIcorrecto");
+                }
+
+                return Ok(_datos.PostCarrera(Ocarrera));
+            }
+            catch (Exception)
+            {
+                return  StatusCode(500,"errorInterno!!!");
+            }
+
         }
 
-        // PUT api/<CarrerasController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
-        {
-        }
+        //// PUT api/<CarrerasController>/5
+        //[HttpPut("{id}")]
+        //public void Put(int id, [FromBody] string value)
+        //{
+        //}
 
-        // DELETE api/<CarrerasController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
+        //// DELETE api/<CarrerasController>/5
+        //[HttpDelete("{id}")]
+        //public void Delete(int id)
+        //{
+        //}
     }
 }
