@@ -32,6 +32,7 @@ references	carrera(id_carrera),
 constraint	id_Materias	foreign	key(id_materias)
 references	materias(id_materias))
 
+select*from	titulo
 
 insert	into	titulo(descripcion)
 values('tecnicatura')
@@ -107,6 +108,8 @@ insert	into	detalle_carrera(año_cursado,cuatrimestre,id_carrera,id_materias)
 		values('primerAño',0,1,5)
 
 select	*from	detalle_carrera
+
+select*from	carrera
 
 
 

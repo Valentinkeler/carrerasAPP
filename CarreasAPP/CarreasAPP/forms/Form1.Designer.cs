@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCarrera = new System.Windows.Forms.TextBox();
             this.nombre = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboTitulo = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.txtAÑO = new System.Windows.Forms.TextBox();
+            this.cboMaterias = new System.Windows.Forms.ComboBox();
+            this.rbtPrimerCuatri = new System.Windows.Forms.RadioButton();
+            this.rbtSegundoCuatri = new System.Windows.Forms.RadioButton();
             this.btnAgregarMateria = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -47,12 +47,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtCarrera
             // 
-            this.textBox1.Location = new System.Drawing.Point(90, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(121, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtCarrera.Location = new System.Drawing.Point(90, 28);
+            this.txtCarrera.Name = "txtCarrera";
+            this.txtCarrera.Size = new System.Drawing.Size(121, 23);
+            this.txtCarrera.TabIndex = 0;
             // 
             // nombre
             // 
@@ -63,13 +63,13 @@
             this.nombre.TabIndex = 1;
             this.nombre.Text = "carrera";
             // 
-            // comboBox1
+            // cboTitulo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(90, 75);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 2;
+            this.cboTitulo.FormattingEnabled = true;
+            this.cboTitulo.Location = new System.Drawing.Point(90, 75);
+            this.cboTitulo.Name = "cboTitulo";
+            this.cboTitulo.Size = new System.Drawing.Size(121, 23);
+            this.cboTitulo.TabIndex = 2;
             // 
             // label2
             // 
@@ -98,42 +98,42 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "materia";
             // 
-            // textBox2
+            // txtAÑO
             // 
-            this.textBox2.Location = new System.Drawing.Point(390, 23);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(121, 23);
-            this.textBox2.TabIndex = 6;
+            this.txtAÑO.Location = new System.Drawing.Point(390, 23);
+            this.txtAÑO.Name = "txtAÑO";
+            this.txtAÑO.Size = new System.Drawing.Size(121, 23);
+            this.txtAÑO.TabIndex = 6;
             // 
-            // comboBox2
+            // cboMaterias
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(390, 74);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 23);
-            this.comboBox2.TabIndex = 7;
+            this.cboMaterias.FormattingEnabled = true;
+            this.cboMaterias.Location = new System.Drawing.Point(390, 74);
+            this.cboMaterias.Name = "cboMaterias";
+            this.cboMaterias.Size = new System.Drawing.Size(121, 23);
+            this.cboMaterias.TabIndex = 7;
             // 
-            // radioButton1
+            // rbtPrimerCuatri
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(211, 129);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(129, 19);
-            this.radioButton1.TabIndex = 8;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "primer cuatrimestre";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbtPrimerCuatri.AutoSize = true;
+            this.rbtPrimerCuatri.Location = new System.Drawing.Point(211, 129);
+            this.rbtPrimerCuatri.Name = "rbtPrimerCuatri";
+            this.rbtPrimerCuatri.Size = new System.Drawing.Size(129, 19);
+            this.rbtPrimerCuatri.TabIndex = 8;
+            this.rbtPrimerCuatri.TabStop = true;
+            this.rbtPrimerCuatri.Text = "primer cuatrimestre";
+            this.rbtPrimerCuatri.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rbtSegundoCuatri
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(371, 129);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(140, 19);
-            this.radioButton2.TabIndex = 9;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "segundo cuatrimestre";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbtSegundoCuatri.AutoSize = true;
+            this.rbtSegundoCuatri.Location = new System.Drawing.Point(371, 129);
+            this.rbtSegundoCuatri.Name = "rbtSegundoCuatri";
+            this.rbtSegundoCuatri.Size = new System.Drawing.Size(140, 19);
+            this.rbtSegundoCuatri.TabIndex = 9;
+            this.rbtSegundoCuatri.TabStop = true;
+            this.rbtSegundoCuatri.Text = "segundo cuatrimestre";
+            this.rbtSegundoCuatri.UseVisualStyleBackColor = true;
             // 
             // btnAgregarMateria
             // 
@@ -143,6 +143,7 @@
             this.btnAgregarMateria.TabIndex = 10;
             this.btnAgregarMateria.Text = "agregar materia";
             this.btnAgregarMateria.UseVisualStyleBackColor = true;
+            this.btnAgregarMateria.Click += new System.EventHandler(this.btnAgregarMateria_Click);
             // 
             // dataGridView1
             // 
@@ -161,6 +162,7 @@
             this.btnNuevo.TabIndex = 12;
             this.btnNuevo.Text = "nueva";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // button1
             // 
@@ -179,6 +181,7 @@
             this.button2.TabIndex = 14;
             this.button2.Text = "cancelar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -188,6 +191,7 @@
             this.button3.TabIndex = 15;
             this.button3.Text = "salir";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
@@ -200,18 +204,19 @@
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnAgregarMateria);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.rbtSegundoCuatri);
+            this.Controls.Add(this.rbtPrimerCuatri);
+            this.Controls.Add(this.cboMaterias);
+            this.Controls.Add(this.txtAÑO);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cboTitulo);
             this.Controls.Add(this.nombre);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCarrera);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,16 +225,16 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtCarrera;
         private Label nombre;
-        private ComboBox comboBox1;
+        private ComboBox cboTitulo;
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox textBox2;
-        private ComboBox comboBox2;
-        private RadioButton radioButton1;
-        private RadioButton radioButton2;
+        private TextBox txtAÑO;
+        private ComboBox cboMaterias;
+        private RadioButton rbtPrimerCuatri;
+        private RadioButton rbtSegundoCuatri;
         private Button btnAgregarMateria;
         private DataGridView dataGridView1;
         private Button btnNuevo;
