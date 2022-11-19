@@ -67,7 +67,7 @@ namespace CarreasAPP
 
             //foreach (DataGridViewRow item in dgvMaterias.Rows)
             //{
-            //    if (item.Cells["materia"].Value.ToString().Equals(cboMaterias.Text))
+            //    if (item.Cells["idMateria"].Value.ToString().Equals(cboMaterias.SelectedIndex))
             //    {
             //        MessageBox.Show("materia: " + cboMaterias.Text + " ya se encuentra como detalle!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             //        return;
@@ -99,6 +99,38 @@ namespace CarreasAPP
         {
             cargarMaterias();
             cargarTitulos();
+        }
+
+        private async void button1_Click(object sender, EventArgs e)
+        {
+            if (dgvMaterias.Rows.Count == 0)
+            {
+                MessageBox.Show("Debe ingresar al menos detalle!", "Control", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            await guardarcarrera();
+
+        }
+
+        private async Task guardarcarrera()
+        {
+            nueva.nombre =  txtCarrera.Text;
+            nueva.titulos = (titulo)cboTitulo.SelectedItem;
+            string  bodyContent=  JsonConvert.SerializeObject(nueva);
+
+            string url = "https://localhost:7060/carrera";
+            var result = clientSingelton.getInstance().postAsync(url, bodyContent);
+
+            if (result.Equals("true"))
+            {
+                MessageBox.Show("carrera registrado", "Informe", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
+            }
+            else
+            {
+                MessageBox.Show("ERROR. No se pudo registrar la carrera", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

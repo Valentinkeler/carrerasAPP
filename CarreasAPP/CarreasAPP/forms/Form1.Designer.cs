@@ -40,15 +40,15 @@
             this.rbtSegundoCuatri = new System.Windows.Forms.RadioButton();
             this.btnAgregarMateria = new System.Windows.Forms.Button();
             this.dgvMaterias = new System.Windows.Forms.DataGridView();
+            this.IdMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ColMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.añoCursado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cuatrimestre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quitar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.IdMateria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.materia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.añoCursado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cuatrimestre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quitar = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMaterias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -155,7 +155,7 @@
             this.dgvMaterias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMaterias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdMateria,
-            this.materia,
+            this.ColMateria,
             this.añoCursado,
             this.cuatrimestre,
             this.quitar});
@@ -164,6 +164,32 @@
             this.dgvMaterias.RowTemplate.Height = 25;
             this.dgvMaterias.Size = new System.Drawing.Size(447, 196);
             this.dgvMaterias.TabIndex = 11;
+            // 
+            // IdMateria
+            // 
+            this.IdMateria.HeaderText = "idMateria";
+            this.IdMateria.Name = "IdMateria";
+            this.IdMateria.Visible = false;
+            // 
+            // ColMateria
+            // 
+            this.ColMateria.HeaderText = "materia";
+            this.ColMateria.Name = "ColMateria";
+            // 
+            // añoCursado
+            // 
+            this.añoCursado.HeaderText = "añoCursado";
+            this.añoCursado.Name = "añoCursado";
+            // 
+            // cuatrimestre
+            // 
+            this.cuatrimestre.HeaderText = "cuatrimestre";
+            this.cuatrimestre.Name = "cuatrimestre";
+            // 
+            // quitar
+            // 
+            this.quitar.HeaderText = "quitar";
+            this.quitar.Name = "quitar";
             // 
             // btnNuevo
             // 
@@ -183,6 +209,7 @@
             this.button1.TabIndex = 13;
             this.button1.Text = "gruardar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -203,32 +230,6 @@
             this.button3.Text = "salir";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // IdMateria
-            // 
-            this.IdMateria.HeaderText = "idMateria";
-            this.IdMateria.Name = "IdMateria";
-            this.IdMateria.Visible = false;
-            // 
-            // materia
-            // 
-            this.materia.HeaderText = "materia";
-            this.materia.Name = "materia";
-            // 
-            // añoCursado
-            // 
-            this.añoCursado.HeaderText = "añoCursado";
-            this.añoCursado.Name = "añoCursado";
-            // 
-            // cuatrimestre
-            // 
-            this.cuatrimestre.HeaderText = "cuatrimestre";
-            this.cuatrimestre.Name = "cuatrimestre";
-            // 
-            // quitar
-            // 
-            this.quitar.HeaderText = "quitar";
-            this.quitar.Name = "quitar";
             // 
             // Form1
             // 
@@ -279,7 +280,7 @@
         private Button button2;
         private Button button3;
         private DataGridViewTextBoxColumn IdMateria;
-        private DataGridViewTextBoxColumn materia;
+        private DataGridViewTextBoxColumn ColMateria;
         private DataGridViewTextBoxColumn añoCursado;
         private DataGridViewTextBoxColumn cuatrimestre;
         private DataGridViewButtonColumn quitar;
